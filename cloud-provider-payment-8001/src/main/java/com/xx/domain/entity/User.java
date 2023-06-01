@@ -22,6 +22,8 @@ public class User implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
+    private String name;
+
     public Integer getId() {
         return id;
     }
@@ -30,10 +32,19 @@ public class User implements Serializable {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-            "id = " + id +
-        "}";
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

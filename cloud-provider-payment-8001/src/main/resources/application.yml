@@ -5,7 +5,7 @@ spring:
     name: cloud-payment-service
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://127.0.0.1:5432/postgres?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:postgresql://127.0.0.1:5432/cloud_demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     password: 123
     username: postgres
     hikari:
