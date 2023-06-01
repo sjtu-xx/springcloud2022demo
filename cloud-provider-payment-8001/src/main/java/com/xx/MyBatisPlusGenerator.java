@@ -14,7 +14,7 @@ public class MyBatisPlusGenerator {
     public static void main(String[] args) {
         FastAutoGenerator.create("jdbc:postgresql://localhost:5432/cloud_demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai", "postgres", "123")
                 .globalConfig(builder -> {
-                    builder.author("xuexuan").outputDir("~/Desktop/springcloud2022demo/cloud-provider-payment-8001/src/main/java/com/xx");
+                    builder.author("xuexuan").outputDir("cloud-provider-payment-8001/src/main/java/");
                 }).dataSourceConfig(builder -> builder.typeConvertHandler((globalConfig, typeRegistry, metaInfo) -> {
                     int typeCode = metaInfo.getJdbcType().TYPE_CODE;
                     if (typeCode == Types.SMALLINT) {
