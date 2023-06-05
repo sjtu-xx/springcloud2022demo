@@ -1,0 +1,15 @@
+GET http://127.0.0.1:8001/user/get/1
+
+###
+
+POST http://127.0.0.1:8001/user/create
+Content-Type: application/json
+
+{
+  "name":"xuexuan"
+}
+
+###
+
+
+

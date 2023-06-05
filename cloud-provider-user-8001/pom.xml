@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>cloud-provider-payment-8001</artifactId>
+    <artifactId>cloud-provider-user-8001</artifactId>
 
     <dependencies>
         <dependency>
@@ -31,6 +31,10 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
             <groupId>org.freemarker</groupId>

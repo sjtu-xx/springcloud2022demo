@@ -19,3 +19,4 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     banner: off
+  type-aliases-package: com.xx.domain.entity
