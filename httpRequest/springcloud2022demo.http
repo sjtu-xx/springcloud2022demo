@@ -11,5 +11,17 @@ Content-Type: application/json
 
 ###
 
+POST http://localhost:80/consumer/user/create
+Content-Type: application/json
+
+{
+  "name": "xuexuan"
+}
+
+###
+
+GET http://localhost:80/consumer/user/get/1
+
+
 
 
