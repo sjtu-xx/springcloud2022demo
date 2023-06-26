@@ -12,8 +12,8 @@ public class UserController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @PostMapping("/consumer/user/create")
-    public CommonResult<User> create(@RequestBody User user) {
+    @GetMapping("/consumer/user/create")
+    public CommonResult<User> create(User user) {
         return restTemplate.postForObject(USER_URL + "/user/create", user, CommonResult.class);
     }
 
