@@ -1,4 +1,4 @@
-package com.xx.domain.mapper;
+package com.xx.mapper;
 
 import com.xx.domain.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

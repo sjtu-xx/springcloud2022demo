@@ -9,6 +9,7 @@
     <modules>
         <module>cloud-provider-user-8001</module>
         <module>cloud-consumer-user80</module>
+        <module>cloud-common</module>
     </modules>
 
     <properties>
@@ -34,6 +35,11 @@
                 <artifactId>lombok</artifactId>
                 <version>1.18.28</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.8.20</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
