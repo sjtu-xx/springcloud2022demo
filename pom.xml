@@ -8,12 +8,13 @@
     <packaging>pom</packaging>
     <modules>
         <module>cloud-provider-user-8001</module>
+        <module>cloud-consumer-user80</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
         <revision>1.0</revision>
         <spring-boot.version>3.0.2</spring-boot.version>
         <spring-cloud.version>2022.0.3</spring-cloud.version>
