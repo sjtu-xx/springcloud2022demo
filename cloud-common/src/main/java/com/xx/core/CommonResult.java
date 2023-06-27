@@ -21,4 +21,9 @@ public class CommonResult<T> {
     public static <T> CommonResult<T> successReturn(T data) {
         return new CommonResult<>(200, "", data);
     }
+
+
+    public static <T> CommonResult<T> from(Integer code, String message, T data) {
+        return new CommonResult<>(code, message, data);
+    }
 }
