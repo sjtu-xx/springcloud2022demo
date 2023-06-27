@@ -10,6 +10,7 @@
         <module>cloud-provider-user-8001</module>
         <module>cloud-consumer-user80</module>
         <module>cloud-common</module>
+        <module>cloud-eureka-server-7001</module>
     </modules>
 
     <properties>
