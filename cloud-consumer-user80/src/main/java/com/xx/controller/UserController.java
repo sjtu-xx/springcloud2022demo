@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class UserController {
-    public static final String USER_URL = "http://localhost:8001";
+    public static final String USER_URL = "http://USER-PROVIDER";
     @Autowired
     private RestTemplate restTemplate;
 
