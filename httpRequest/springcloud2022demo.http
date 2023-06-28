@@ -18,6 +18,10 @@ GET http://localhost:80/consumer/user/create?name=xuexuan
 
 GET http://localhost:80/consumer/user/get/1
 
+###
+
+GET http://127.0.0.1:8001/user/user/discovery
+
 
 
 

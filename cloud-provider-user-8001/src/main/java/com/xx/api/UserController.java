@@ -4,6 +4,8 @@ import com.xx.core.CommonResult;
 import com.xx.domain.entity.User;
 import com.xx.service.IUserService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,11 +22,14 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
     private final IUserService userService;
+    private final DiscoveryClient discoveryClient;
+
     @Value("${server.port}")
     private String port;
 
-    public UserController(IUserService userService) {
+    public UserController(IUserService userService, DiscoveryClient discoveryClient) {
         this.userService = userService;
+        this.discoveryClient = discoveryClient;
     }
 
     @GetMapping("/listAll")
@@ -42,4 +47,16 @@ public class UserController {
         return CommonResult.from(200, "创建成功，port：" + port, userService.save(user));
     }
 
+    @GetMapping("/user/discovery")
+    public Object discovery() {
+        List<String> services = discoveryClient.getServices();
+        for (String service : services) {
+            System.out.println(service);
+        }
+        List<ServiceInstance> instances = discoveryClient.getInstances("USER-PROVIDER");
+        instances.forEach(instance -> {
+            System.out.println(instance.getServiceId() + "\t" + instance.getHost() + "\t" + instance.getPort() + "\t" + instance.getUri());
+        });
+        return this.discoveryClient;
+    }
 }
