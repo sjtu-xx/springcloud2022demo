@@ -17,7 +17,6 @@ import java.util.UUID;
  * @since 2023-06-02
  */
 @RestController
-@RequestMapping("/user")
 public class UserController {
     private final DiscoveryClient discoveryClient;
 
