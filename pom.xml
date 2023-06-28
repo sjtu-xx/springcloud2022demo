@@ -15,6 +15,7 @@
         <module>cloud-provider-user-8002</module>
         <module>cloud-provider-user-8004</module>
         <module>cloud-consumerzk-user80</module>
+        <module>cloud-provider-user-8006</module>
     </modules>
 
     <properties>

@@ -29,3 +29,7 @@ GET http://127.0.0.1:8004/user/zk
 ###
 
 GET http://127.0.0.1:80/consumer/user/zk
+
+###
+GET http://localhost:8080/user/consul
+
