@@ -38,3 +38,12 @@ GET http://127.0.0.1:80/consumer/user/consul
 
 ###
 GET http://localhost/consumer/user/get/1
+
+###
+GET http://127.0.0.1:8007/user/ok/1
+
+
+###
+GET http://127.0.0.1:8007/user/timeout/1
+
+###
