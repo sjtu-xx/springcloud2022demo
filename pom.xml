@@ -17,6 +17,7 @@
         <module>cloud-consumerzk-user80</module>
         <module>cloud-provider-user-8006</module>
         <module>cloud-consumer-consul-user80</module>
+        <module>cloud-consumer-openfeign-user80</module>
     </modules>
 
     <properties>
