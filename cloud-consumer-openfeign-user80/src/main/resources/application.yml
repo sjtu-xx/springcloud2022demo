@@ -19,3 +19,6 @@ eureka:
   instance:
     instance-id: user-consumer
     prefer-ip-address: true
+logging:
+  level:
+    com.xx.service.UserFeignService: debug

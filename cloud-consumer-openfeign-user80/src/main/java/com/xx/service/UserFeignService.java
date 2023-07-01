@@ -1,4 +1,4 @@
-package xx.service;
+package com.xx.service;
 
 
 import com.xx.core.CommonResult;

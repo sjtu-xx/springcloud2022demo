@@ -35,3 +35,6 @@ GET http://localhost:8080/user/consul
 
 ###
 GET http://127.0.0.1:80/consumer/user/consul
+
+###
+GET http://localhost/consumer/user/get/1
