@@ -20,6 +20,7 @@
         <module>cloud-consumer-openfeign-user80</module>
         <module>cloud-provider-hystrix-user8007</module>
         <module>cloud-consumer-hystrix-user80</module>
+        <module>cloud-gateway-8429</module>
     </modules>
 
     <properties>

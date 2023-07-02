@@ -1,0 +1,18 @@
+server:
+  port: 8429
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user
+          uri: http://localhost:8001
+          predicates:
+            - Path=/user/get/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka
+  instance:
+    instance-id: cloud-gateway
