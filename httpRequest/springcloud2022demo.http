@@ -54,3 +54,6 @@ GET http://127.0.0.1:80/user/timeout/1
 
 ###
 GET http://127.0.0.1:8429/user/get/1
+
+###
+GET http://localhost:8429/user/listAll
