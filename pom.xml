@@ -19,6 +19,7 @@
         <module>cloud-consumer-consul-user80</module>
         <module>cloud-consumer-openfeign-user80</module>
         <module>cloud-provider-hystrix-user8007</module>
+        <module>cloud-consumer-hystrix-user80</module>
     </modules>
 
     <properties>

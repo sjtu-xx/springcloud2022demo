@@ -1,8 +1,8 @@
 server:
-  port: 8007
+  port: 80
 spring:
   application:
-    name: provider-user
+    name: user-consumer
 eureka:
   client:
     register-with-eureka: true
@@ -10,7 +10,8 @@ eureka:
     service-url:
       defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka
   instance:
-    instance-id: provider-8007
+    instance-id: user-consumer
     prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 1
-    lease-expiration-duration-in-seconds: 2
+logging:
+  level:
+    com.xx.service.UserService: debug
