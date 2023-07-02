@@ -5,9 +5,12 @@ spring:
     name: cloud-gateway
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: user
-          uri: http://localhost:8001
+          uri: lb://USER-PROVIDER
           predicates:
             - Path=/user/get/**
 eureka:
