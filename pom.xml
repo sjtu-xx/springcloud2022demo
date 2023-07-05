@@ -21,6 +21,7 @@
         <module>cloud-provider-hystrix-user8007</module>
         <module>cloud-consumer-hystrix-user80</module>
         <module>cloud-gateway-8429</module>
+        <module>cloud-config-center-3456</module>
     </modules>
 
     <properties>

@@ -1,0 +1,25 @@
+server:
+  port: 3456
+spring:
+  application:
+    name: config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:sjtu-xx/springcloud-config.git
+          search-paths:
+            - springcloud-config
+      # 分支名称
+      label: main
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka
+  instance:
+    instance-id: config-center
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
