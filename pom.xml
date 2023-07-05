@@ -22,6 +22,7 @@
         <module>cloud-consumer-hystrix-user80</module>
         <module>cloud-gateway-8429</module>
         <module>cloud-config-center-3456</module>
+        <module>cloud-config-client-4567</module>
     </modules>
 
     <properties>
