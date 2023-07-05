@@ -23,6 +23,7 @@
         <module>cloud-gateway-8429</module>
         <module>cloud-config-center-3456</module>
         <module>cloud-config-client-4567</module>
+        <module>cloud-config-client-4568</module>
     </modules>
 
     <properties>

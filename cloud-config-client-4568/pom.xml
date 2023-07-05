@@ -7,7 +7,8 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>cloud-config-client-4567</artifactId>
+    <artifactId>cloud-config-client-4568</artifactId>
+    <name>cloud-config-client-4568</name>
 
     <dependencies>
         <dependency>
