@@ -57,3 +57,9 @@ GET http://127.0.0.1:8429/user/get/1
 
 ###
 GET http://localhost:8429/user/listAll
+
+###
+GET http://localhost:3456/main/config-dev.yml
+
+###
+GET http://localhost:4567/fetchConfig

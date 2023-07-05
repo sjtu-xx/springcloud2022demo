@@ -1,0 +1,29 @@
+server:
+  port: 4567
+spring:
+  application:
+    name: config
+  config:
+    import: configserver:http://localhost:3456
+  profiles:
+    active: prod
+#  cloud:
+#    config:
+#      label: main
+#  cloud:
+#    config:
+#      label: main
+#      name: config
+#      profile: dev
+#      uri: http://localhost:3456
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka
+  instance:
+    instance-id: config
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
