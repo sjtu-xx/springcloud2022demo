@@ -7,6 +7,11 @@ spring:
     import: configserver:http://localhost:3456
   profiles:
     active: prod
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 #  cloud:
 #    config:
 #      label: main

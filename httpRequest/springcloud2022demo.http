@@ -63,3 +63,6 @@ GET http://localhost:3456/main/config-dev.yml
 
 ###
 GET http://localhost:4567/fetchConfig
+
+### 刷新配置
+POST http://localhost:4567/actuator/refresh
