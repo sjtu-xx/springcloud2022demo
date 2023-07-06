@@ -75,3 +75,7 @@ POST http://localhost:4568/actuator/refresh
 
 ### 配置中心更新配置 通知其他服务
 POST http://localhost:3456/actuator/busrefresh
+
+### 通知指定实例 https://docs.spring.io/spring-cloud-bus/docs/current/reference/html/#addressing-an-instance
+### configclient4567后面的为bus.id
+POST http://localhost:3456/actuator/busrefresh/configclient4567

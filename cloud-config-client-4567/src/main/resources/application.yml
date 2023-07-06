@@ -5,6 +5,9 @@ spring:
     name: config
   config:
     import: configserver:http://localhost:3456
+  cloud:
+    bus:
+      id: configclient4567
   profiles:
     active: prod
   rabbitmq:
