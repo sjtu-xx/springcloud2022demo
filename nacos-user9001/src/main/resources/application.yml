@@ -2,7 +2,7 @@ server:
   port: 9001
 spring:
   application:
-    name: nacos-user9001
+    name: nacos-user-provider
   cloud:
     nacos:
       discovery:
