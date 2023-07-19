@@ -24,6 +24,7 @@
         <module>cloud-config-center-3456</module>
         <module>cloud-config-client-4567</module>
         <module>cloud-config-client-4568</module>
+        <module>nacos-user9001</module>
     </modules>
 
     <properties>
