@@ -79,3 +79,13 @@ POST http://localhost:3456/actuator/busrefresh
 ### 通知指定实例 https://docs.spring.io/spring-cloud-bus/docs/current/reference/html/#addressing-an-instance
 ### configclient4567后面的为bus.id
 POST http://localhost:3456/actuator/busrefresh/configclient4567
+
+
+### nacos
+GET http://localhost:9001/user/get
+
+###
+GET http://localhost:80/user/get
+
+###
+GET http://localhost:80/user/get2
