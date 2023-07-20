@@ -89,3 +89,6 @@ GET http://localhost:80/user/get
 
 ###
 GET http://localhost:80/user/get2
+
+###
+GET http://localhost:3377/configInfo

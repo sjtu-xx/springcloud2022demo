@@ -26,6 +26,7 @@
         <module>cloud-config-client-4568</module>
         <module>nacos-user9001</module>
         <module>nacos-user-consumer-80</module>
+        <module>nacos-config-client</module>
     </modules>
 
     <properties>
