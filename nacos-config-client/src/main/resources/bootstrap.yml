@@ -10,4 +10,5 @@ spring:
       config:
         server-addr: localhost:8848
         file-extension: yml
+#        namespace: namespaceId
 #        group: CUSTOM_GROUP
