@@ -27,6 +27,7 @@
         <module>nacos-user9001</module>
         <module>nacos-user-consumer-80</module>
         <module>nacos-config-client</module>
+        <module>alibaba-sentinel8401</module>
     </modules>
 
     <properties>
